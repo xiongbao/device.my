@@ -123,7 +123,7 @@
 var root = document.getElementById('body');
 var rfsstyle = window.getComputedStyle(root, null).getPropertyValue('font-size');
 var rfsstyle = parseInt(rfsstyle);
-document.getElementById('rfs').innerHTML = 'Root font size : <em>' + rfsstyle + 'px</em>';
+document.getElementById('rfs').innerHTML = 'Root font size: <em>' + rfsstyle + 'px</em>';
 
 
 // Pointer events
@@ -145,27 +145,27 @@ for(var index = 0; index < document.querySelector('html').classList.length; inde
 // screen.width
 var sw = screen.width;
 var sh = screen.height;
-document.getElementById('screenwidth').innerHTML = 'JS screen.width : <em>' + sw + 'px</em>';
+document.getElementById('screenwidth').innerHTML = 'JS screen.width: <em>' + sw + 'px</em>';
 
 // screen.height
-document.getElementById('screenheight').innerHTML = 'JS screen.height : <em>' + sh + 'px</em>';
+document.getElementById('screenheight').innerHTML = 'JS screen.height: <em>' + sh + 'px</em>';
 
 
 // resolution
 var jsdpi = res.dpi();
 jsdpi = jsdpi.toFixed(2);
-document.getElementById('jsdpi').innerHTML = 'Resolution (dpi) : <em>' + jsdpi + 'dpi</em>';
+document.getElementById('jsdpi').innerHTML = 'Resolution(dpi): <em>' + jsdpi + 'dpi</em>';
 var jsdppx = res.dppx();
 jsdppx = jsdppx.toFixed(2);
-document.getElementById('jsdppx').innerHTML = 'Resolution (dppx) : <em>' + jsdppx + 'dppx</em>';
+document.getElementById('jsdppx').innerHTML = 'Resolution(dppx): <em>' + jsdppx + 'dppx</em>';
 var jsdpcm = res.dpcm();
 jsdpcm = jsdpcm.toFixed(2);
-document.getElementById('jsdpcm').innerHTML = 'Resolution (dpcm) : <em>' + jsdpcm + 'dpcm</em>';
+document.getElementById('jsdpcm').innerHTML = 'Resolution(dpcm): <em>' + jsdpcm + 'dpcm</em>';
 
 // aspect ratio
 var deviceaspectratio = verge.aspect(screen);
 deviceaspectratio = deviceaspectratio.toFixed(2);
-document.getElementById('deviceaspectratio').innerHTML = 'Device Aspect-Ratio : <em>' + deviceaspectratio + '</em>';
+document.getElementById('deviceaspectratio').innerHTML = 'Device Aspect-Ratio: <em>' + deviceaspectratio + '</em>';
 
 // viewport width
 var viewportwidth = verge.viewportW();
@@ -202,7 +202,7 @@ window.addEventListener('resize', function() {
 // pixel ratio
 var pxr = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
 pxr = pxr.toFixed(4);
-document.getElementById('jsratio').innerHTML = 'JS pixel-ratio : <em>' + pxr + '</em>';
+document.getElementById('jsratio').innerHTML = 'JS pixel-ratio: <em>' + pxr + '</em>';
 
 // user agent
 if (navigator.userAgent) document.getElementById('ua').innerHTML = navigator.userAgent;
