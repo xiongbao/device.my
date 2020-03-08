@@ -4,6 +4,8 @@ body {
   color: #03081A;
   font-size: 16px;
 }
+a,a:visited {color: #fff;text-decoration: none;}
+ul {list-style: none;padding: 0;margin: 0;}
 h1 {
   text-align: center;
   font-size: 48px;
@@ -53,6 +55,40 @@ h1 span::after {
   max-width: 800px;
   margin: 0 auto;
 }
+.box {
+  background-color: #f5f6fe;
+}
+.box-title {
+  margin: 0;
+  padding:10px 20px;
+  background-color: #344150;
+  color: #fff;
+}
+.list {padding: 10px 20px;}
+.list li {
+  display: flex;
+  padding:10px 0;
+  font-family: monospace;
+  align-items: center;
+  position: relative;
+}
+.list li::after {
+  content: '';
+  position: absolute;left: 0;right: 0;top: 0;
+  height: 1px;
+  background-color: #ddd;
+}
+.list li:first-child::after {display: none;}
+.grid {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.user-agent p {
+  padding: 20px;
+  background-color: #f5f6fe;
+}
 footer {
   text-align: center;
   padding: 4vmax 0;
@@ -60,3 +96,13 @@ footer {
   color: #fff;
 }
 .mod-title {font-size: 48px;text-align: center;}
+
+@media (max-width: 575px) {
+  .viewport strong {font-size: 48px;}
+  .mod {padding: 0 20px;}
+  .mod-title {font-size: 32px;}
+  .grid {
+    display: block;
+  }
+  .box {margin-top: 20px;}
+}
