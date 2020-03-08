@@ -232,3 +232,15 @@ footer {
     content: '5';
   }
 }
+
+@media (orientation: landscape) {
+  .cssorient em:after {
+    content: 'landscape';
+  }
+}
+
+@media (orientation: portrait) {
+  .cssorient em:after {
+    content: 'portrait';
+  }
+}
