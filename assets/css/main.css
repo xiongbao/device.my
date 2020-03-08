@@ -1,0 +1,62 @@
+html,body {margin:0;padding:0;}
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Tahoma', 'Arial', 'PingFang SC', 'Microsoft Yahei';
+  color: #03081A;
+  font-size: 16px;
+}
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+h1 span {position: relative;}
+h1 span::after {
+  content: attr(title);
+  position: absolute;
+  right: 12%;
+  top: 81.5%;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.viewport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #007aff;
+  color: #fff;
+  height: 20vmax;
+}
+.viewport h2 {font-size: 14px;font-weight: 300;margin: 0;}
+.viewport p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.viewport strong {
+  position: relative;
+  font-size: 72px;
+}
+.viewport strong::after {
+  content: 'PX';
+  font-size: 24px;
+  line-height: 100%;
+  position: absolute;
+  left: 0;right: 0;top: 85%;
+  font-weight: 300;
+  letter-spacing: 2px;
+  opacity: .4;
+}
+.viewport span {font-size: 36px;margin:0 20px;}
+
+.mod {
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+  padding: 4vmax 0;
+  background-color: #007aff;
+  color: #fff;
+}
+.mod-title {font-size: 48px;text-align: center;}

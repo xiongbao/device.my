@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>My device</title>
+  <link rel="icon" href="assets/img/favicon.png">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body id="body" class="layout--mydevice">
+<header>
+  <h1><span title="web devices capabilities">Device.my</span></h1>
+</header>
+<mainer>
+  <div class="viewport">
+    <div class="inner">
+      <h2>my viewport is:</h2>
+      <p><strong id="viewportwidth"></strong><span>×</span><strong id="viewportheight"></strong></p>
+    </div>
+  </div>
+
+  <div class="mod metrics">
+    <h2 class="mod-title">Screen metrics</h2>
+    <div class="mod-content grid">
+      <div class="box">
+        <h3 class="box-title">Size</h3>
+        <ul class="list">
+          <li id="screenwidth">JS screen.width: <em></em></li>
+          <li id="screenheight">JS screen.height: <em></em></li>
+        </ul>
+      </div>
+      <!-- / box -->
+      <div class="box">
+        <h3 class="box-title">Pixel ratio</h3>
+        <ul class="list">
+          <li class="cssratio">CSS pixel-ratio: <em></em></li>
+          <li id="jsratio">JS pixel-ratio: <em></em></li>
+        </ul>
+      </div>
+      <!-- / box -->
+      <div class="box">
+        <h3 class="box-title">Density</h3>
+        <ul class="list">
+          <li id="jsdpi">Resolution (dpi): <em></em></li>
+          <li id="jsdppx">Resolution (dppx): <em></em></li>
+          <li id="jsdpcm">Resolution (dpcm): <em></em></li>
+        </ul>
+      </div>
+      <!-- / box -->
+      <div class="box">
+        <h3 class="box-title">Misc</h3>
+        <ul class="list">
+          <li id="rfs">Root font size: <em></em></li>
+          <li class="cssorient">Orientation: <em></em></li>
+          <li id="deviceaspectratio">Device Aspect-Ratio: <em></em></li>
+        </ul>
+      </div>
+      <!-- / box -->
+    </div>
+  </div>
+  <!-- / mod -->
+  <div class="mod features">
+    <h2 class="mod-title">My browser features</h2>
+    <div class="mod-content grid">
+      <div class="box">
+        <h3 class="box-title">CSS3</h3>
+        <ul class="list js-modernizr">
+          <li class="flexbox">
+            <span class="icon-"></span>flexbox</li>
+          <li class="cssgrid">
+            <span class="icon-"></span>grid layout</li>
+          <li class="cssgridlegacy">
+            <span class="icon-"></span>grid layout (old)</li>
+          <li class="csspositionsticky">
+            <span class="icon-"></span>position: sticky</li>
+          <li class="regions">
+            <span class="icon-"></span>regions</li>
+          <li class="supports">
+            <span class="icon-"></span>@supports</li>
+          <li class="willchange">
+            <span class="icon-"></span>will-change</li>
+          <li class="csspointerevents">
+            <span class="icon-"></span>pointer events</li>
+          <li class="csscalc">
+            <span class="icon-"></span>calc()</li>
+          <li class="cssvwunit">
+            <span class="icon-"></span>viewport units</li>
+          <li class="hovermq">
+            <span class="icon-"></span>hover media query</li>
+          <li class="pointermq">
+            <span class="icon-"></span>pointer media query</li>
+          <li class="backgroundblendmode">
+            <span class="icon-"></span>background blend mode</li>
+          <li class="bgsizecover">
+            <span class="icon-"></span>background-size: cover</li>
+          <li class="objectfit">
+            <span class="icon-"></span>object-fit</li>
+          <li class="ligatures">
+            <span class="icon-"></span>font ligatures</li>
+          <li class="appearance">
+            <span class="icon-"></span>appearance</li>
+          <li class="cssfilters">
+            <span class="icon-"></span>filters</li>
+          <li class="cssmask">
+            <span class="icon-"></span>masks</li>
+          <li class="scrollsnappoints">
+            <span class="icon-"></span>scroll snap points</li>
+          <li class="shapes">
+            <span class="icon-"></span>shapes</li>
+          <li class="csshyphens">
+            <span class="icon-"></span>hyphens</li>
+        </ul>
+      </div>
+      <!-- / box -->
+      <div class="box">
+        <h3 class="box-title">HTML5 / JS</h3>
+        <ul class="list js-modernizr">
+          <li class="flash">
+            <span class="icon-"></span>flash</li>
+          <li class="video">
+            <span class="icon-"></span>video</li>
+          <li class="webgl">
+            <span class="icon-"></span>webgl</li>
+          <li class="canvas">
+            <span class="icon-"></span>canvas</li>
+          <li class="srcset">
+            <span class="icon-"></span>srcset</li>
+          <li class="picture">
+            <span class="icon-"></span>&lt;picture&gt;</li>
+          <li class="inlinesvg">
+            <span class="icon-"></span>inline SVG</li>
+          <li class="webp">
+            <span class="icon-"></span>webp</li>
+          <li class="jpegxr">
+            <span class="icon-"></span>jpegxr</li>
+          <li class="geolocation">
+            <span class="icon-"></span>geolocation</li>
+          <li class="matchmedia">
+            <span class="icon-"></span>matchmedia()</li>
+          <li class="websockets">
+            <span class="icon-"></span>websockets</li>
+          <li class="localstorage">
+            <span class="icon-"></span>localstorage</li>
+          <li class="applicationcache">
+            <span class="icon-"></span>application cache</li>
+          <li class="webworkers">
+            <span class="icon-"></span>webworkers</li>
+          <li class="serviceworker">
+            <span class="icon-"></span>serviceworker</li>
+          <li class="svgfilters">
+            <span class="icon-"></span>SVG filters</li>
+          <li class="emoji">
+            <span class="icon-"></span>emoji</li>
+          <li class="touchevents">
+            <span class="icon-"></span>touch events</li>
+          <li class="fullscreen">
+            <span class="icon-"></span>fullscreen API</li>
+          <li class="filereader">
+            <span class="icon-"></span>file API</li>
+          <li class="gamepads">
+            <span class="icon-"></span>gamepad API</li>
+          <li class="performance">
+            <span class="icon-"></span>performance API</li>
+          <li class="vibrate">
+            <span class="icon-"></span>vibration API</li>
+          <li class="speechrecognition">
+            <span class="icon-"></span>speech recognition API</li>
+          <li class="batteryapi">
+            <span class="icon-"></span>battery API</li>
+          <li class="ambientlight">
+            <span class="icon-"></span>ambient light API</li>
+        </ul>
+      </div>
+      <!-- / box -->
+    </div>
+  </div>
+  <!-- / mod -->
+  <div class="mod user-agent">
+    <h2 class="mod-title">User agent</h2>
+    <div class="mod-content">
+      <p id="ua"></p>
+    </div>
+  </div>
+  <!-- / mod -->
+
+</mainer>
+<footer>
+  <p>Device.my designed by 「<a href="https://xio.ng">熊宝</a>」.</p>
+  <p>&copy; 2020</p>
+</footer>
+
+  <script src="assets/js/modernizr.min.js"></script>
+  <script src="assets/js/mydevice.js"></script>
+  </body>
+</html>
