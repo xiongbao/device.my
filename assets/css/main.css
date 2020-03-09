@@ -81,8 +81,8 @@ h1 span::after {
 }
 .list li:first-child::after {display: none;}
 .list li em {margin-left: auto;font-weight: 700;}
-.features .list li {color: #8a8a8a;}
-.features .list li.supported {color:inherit;font-weight: 700;}
+.features .list li {color: #8a8a8a;font-style: italic;}
+.features .list li.supported {color:inherit;font-weight: 700;font-style: normal;}
 .grid {
   display: grid;
   grid-auto-flow: dense;
@@ -95,7 +95,7 @@ h1 span::after {
 }
 footer {
   text-align: center;
-  padding: 4vmax 0;
+  padding: 2vmax 0;
   background-color: #007aff;
   color: #fff;
 }
