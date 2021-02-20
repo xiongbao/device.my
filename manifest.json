@@ -1,0 +1,16 @@
+{
+    "name": "测试1",
+    "short_name": "测试",
+    "display": "standalone",
+    "orientation": "any",
+    "start_url": ".",
+    "background_color": "#ffffff",
+    "theme_color": "#FF5975",
+    "icons": [
+        {
+            "src": "/assets/images/icon1.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ]
+}
